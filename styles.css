@@ -10,6 +10,7 @@ body {
   align-items: center;
   min-height: 100vh;
   overflow: hidden;
+  flex-direction: column;
 }
 
 .container {
@@ -196,10 +197,19 @@ button:hover {
   z-index: 1000;
 }
 
+footer {
+  position: absolute;
+  bottom: 0;
+}
+
+footer p {
+  font-size: 10px;
+}
+
 @media (max-width: 600px) {
   .container {
     padding: 20px;
-    width: 95%;
+    width: 90%;
   }
 
   h1 {
