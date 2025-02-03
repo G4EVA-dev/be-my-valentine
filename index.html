@@ -3,7 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Will You Be My Valentine?</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div id="stage-1" class="stage active">
+        <h1>Once Upon a Time...</h1>
+        <p>There was someone special who caught my eye.</p>
+        <button onclick="nextStage(2)">Next</button>
+      </div>
+
+      <div id="stage-2" class="stage">
+        <h1>She's Pretty and Fun</h1>
+        <p>Every time I see her, my day gets brighter.</p>
+        <button onclick="nextStage(3)">Next</button>
+      </div>
+
+      <div id="stage-3" class="stage">
+        <h1>Admiration Grows</h1>
+        <p>I realized how amazing she is, inside and out.</p>
+        <button onclick="nextStage(4)">Next</button>
+      </div>
+
+      <div id="stage-4" class="stage">
+        <h1>Valentine's Day is Coming</h1>
+        <p>And I have just one question for her...</p>
+        <button onclick="nextStage(5)">Next</button>
+      </div>
+
+      <div id="stage-5" class="stage">
+        <h1>Will You Be My Valentine?</h1>
+        <p>I'd be the luckiest person if you said yes!</p>
+        <button onclick="showResponseButtons()">Answer</button>
+        <div id="response-buttons" class="hidden">
+          <button onclick="respond('yes')">Yes!</button>
+          <button onclick="respond('no')">No</button>
+        </div>
+        <p id="response-message"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
